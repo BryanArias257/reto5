@@ -1,0 +1,90 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+h1 {
+  margin: 0 0 15px 0;
+  color: #222;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+#news-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  transition: box-shadow 0.2s;
+}
+
+.article:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.article h2 {
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
+.article a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+.article p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.error {
+  color: #d93025;
+  text-align: center;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
