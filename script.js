@@ -1,15 +1,15 @@
 const API_KEY = "39939cc66057c7b2ede3d33001365a96";
 const URL_API = `https://gnews.io/api/v4/top-headlines?category=general&lang=es&country=mx&max=10&apikey=${API_KEY}`;
+const PROXY_URL = 'https://corsproxy.io/?' + encodeURIComponent(URL_API);
 
 const newsArea = document.getElementById("news-area");
 const refreshBtn = document.getElementById("refresh-btn");
 
 function fetchNoticias() {
-  newsArea.innerHTML =
-    '<p class="loading">Cargando noticias, por favor espera...</p>';
+    newsArea.innerHTML = '<p class="loading">Cargando noticias, por favor espera...</p>';
 
-  fetch(URL_API)
-    .then((response) => {
+    fetch(PROXY_URL) 
+        .then(response => {
       if (!response.ok) {
         throw new Error(`Error HTTP: ${response.status}`);
       }
